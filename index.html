@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Management for Obesity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Health Management System</h1>
+        <p>Promoting a Healthier Life for Obese Individuals</p>
+    </div>
+
+    <div class="container mt-4">
+        <!-- BMI Calculator -->
+        <h2 class="section-title">Calculate Your BMI</h2>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-6">
+                <div class="bmi-form">
+                    <form id="bmiForm">
+                        <div class="mb-3">
+                            <label for="weight" class="form-label">Weight (kg)</label>
+                            <input type="number" class="form-control" id="weight" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="height" class="form-label">Height (cm)</label>
+                            <input type="number" class="form-control" id="height" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Calculate BMI</button>
+                    </form>
+                    <div class="mt-3" id="bmiResult" style="display: none;">
+                        <h5>Your BMI: <span id="bmiValue"></span></h5>
+                        <p id="bmiMessage"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nutrition Requirements -->
+        <h2 class="section-title mt-5">Your Nutrition Requirements</h2>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-6">
+                <div class="bmi-form">
+                    <form id="nutritionForm">
+                        <div class="mb-3">
+                            <label for="calories" class="form-label">Daily Calorie Intake (kcal)</label>
+                            <input type="number" class="form-control" id="calories" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Calculate Nutrition</button>
+                    </form>
+                    <div class="mt-3" id="nutritionResult" style="display: none;">
+                        <h5>Recommended Intake:</h5>
+                        <ul>
+                            <li>Protein: <span id="protein"></span> g</li>
+                            <li>Fat: <span id="fat"></span> g</li>
+                            <li>Carbohydrates: <span id="carbs"></span> g</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise Recommendations -->
+        <h2 class="section-title mt-5">Exercise Recommendations</h2>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <p>Based on your data, you should aim for:</p>
+                    <ul>
+                        <li>Running: 30 minutes/day, 3-5 times/week</li>
+                        <li>Weight Training: 20 minutes/day, 2-3 times/week</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2568 Health Management System</p>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
